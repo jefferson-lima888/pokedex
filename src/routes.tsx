@@ -1,12 +1,7 @@
 // import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import React from 'react';
 import Pokedex from "./pokedex/Pokedex";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import PokemonDetail from './pokemon/PokemonDetails';
 import FavoriteScreen from './favoritos/FavoriteScreen';
 

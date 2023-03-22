@@ -1,10 +1,9 @@
-import axios from "axios";
-import React, { useContext, useEffect, useState } from "react";
-import { PokemonDetails } from "../pokemon/interfaces/PokemonDetails";
-import { getPokemonDetails } from "../pokemon/services/getPokemonDetails";
+// import axios from "axios";
+import React, { useContext } from "react";
+// import { PokemonDetails } from "../pokemon/interfaces/PokemonDetails";
+// import { getPokemonDetails } from "../pokemon/services/getPokemonDetails";
 import {
   listPokemons,
-  PokemonListInterface,
 } from "../pokemon/services/listPokemons";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -20,15 +19,10 @@ import {
   Grid,
   LinearProgress,
 } from "@mui/material";
-import Card from "@mui/material/Card";
-import CardActionArea from "@mui/material/CardActionArea";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import { useHistory } from "react-router-dom";
 import PokedexCard from "./components/PokedexCard";
 import { useQuery } from "react-query";
-import { timeUntilStale } from "react-query/types/core/utils";
+// import { timeUntilStale } from "react-query/types/core/utils";
 import { Favorite } from '@mui/icons-material';
 import { FavoriteContext } from "../favoritos/contexts/FavoriteContext";
 
@@ -49,9 +43,9 @@ interface PokedexProps {}
 const Pokedex: React.FC<PokedexProps> = () => {
   // const [pokemons, setPokemons] = useState<PokemonListInterface[]>([]);
   // const [pokemons, setPokemons] = useState<PokemonDetails[]>([]);
-  const [selectedPokemon, setSelectedPokemon] = useState<
-    PokemonListInterface | undefined
-  >(undefined);
+  // const [selectedPokemon, setSelectedPokemon] = useState<
+  //   PokemonListInterface | undefined
+  // >(undefined);
   // const [selectedPokemonDetails, setSelectedPokemonDetails] = useState<PokemonDetails | undefined>(undefined);
   //essa const foi para o componente PokedexCard
   // const history = useHistory();

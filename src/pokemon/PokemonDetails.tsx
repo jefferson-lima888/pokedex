@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { getPokemonDetails } from './services/getPokemonDetails';
-import { PokemonDetails } from '../pokemon/interfaces/PokemonDetails';
-import { AppBar, Badge, Box, Container, IconButton, Toolbar, Typography } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+// import { PokemonDetails } from '../pokemon/interfaces/PokemonDetails';
+import { AppBar, Box, Container, IconButton, Toolbar, Typography } from '@mui/material';
 import { useHistory, useParams } from 'react-router-dom';
 import { useQuery } from 'react-query';
 import { Favorite } from '@mui/icons-material';

@@ -1,10 +1,10 @@
-import { Avatar, Card, CardActions, CardContent, CardHeader, CardMedia, Chip, Collapse, IconButton, Typography } from "@mui/material";
-import { ExpandMore, Favorite, MoreVert, OpenInBrowser, Share } from "@mui/icons-material";
+import { Card, CardActions, CardHeader, CardMedia, Chip, IconButton } from "@mui/material";
+import { Favorite } from "@mui/icons-material";
 import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
-import styled from "styled-components";
+// import styled from "styled-components";
 import { PokemonDetails } from "../../pokemon/interfaces/PokemonDetails";
-import { PokemonListInterface } from "../../pokemon/services/listPokemons";
+// import { PokemonListInterface } from "../../pokemon/services/listPokemons";
 import { FavoriteContext } from "../../favoritos/contexts/FavoriteContext";
 
 
@@ -22,11 +22,11 @@ interface PokedexCardProps {
 // `;
 
 export const PokedexCard: React.FC<PokedexCardProps> = ({ pokemon }) => {
-  const [expanded, setExpanded] = React.useState(false);
+  // const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+  // const handleExpandClick = () => {
+  //   setExpanded(!expanded);
+  // };
 
   const { favorites, setFavorites } = useContext(FavoriteContext);
   const history = useHistory();

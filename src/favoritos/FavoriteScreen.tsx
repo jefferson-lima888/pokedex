@@ -1,25 +1,20 @@
-import React, { useContext, useState } from "react";
-import {
-  listPokemons,
-  PokemonListInterface,
-} from "../pokemon/services/listPokemons";
+import React, { useContext } from "react";
+// import {
+//   listPokemons,
+//   PokemonListInterface,
+// } from "../pokemon/services/listPokemons";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import {
-  Badge,
-  Box,
-  CircularProgress,
   Container,
   Grid,
-  LinearProgress,
 } from "@mui/material";
-import { useHistory } from "react-router-dom";
-import { useQuery } from "react-query";
-import { Favorite } from '@mui/icons-material';
+// import { useHistory } from "react-router-dom";
+// import { useQuery } from "react-query";
+// import { Favorite } from '@mui/icons-material';
 import { FavoriteContext } from "../favoritos/contexts/FavoriteContext";
 import PokedexCard from "../pokedex/components/PokedexCard";
 
@@ -28,7 +23,7 @@ interface FavoriteScreenProps {}
 const FavoriteScreen: React.FC<FavoriteScreenProps> = () => {
   
   const { favorites } = useContext(FavoriteContext);
-  const { push } = useHistory();
+   // const { push } = useHistory();
 //   const favoriteCount = favorites.length;
 
   return (

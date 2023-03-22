@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Router } from 'react-router-dom';
-import Pokedex from './pokedex/Pokedex';
+// import Pokedex from './pokedex/Pokedex';
 import { BrowserRouter as Router } from "react-router-dom";
 import Routers from './routes';
 import { QueryClient, QueryClientProvider} from 'react-query';
